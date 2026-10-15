@@ -1,0 +1,35 @@
+name: Submit a song file
+description: Paste a song JSON made with the prompt in docs/SONG_PROMPT.md. No git needed; we'll add it for you.
+title: "Song submission: "
+labels: ["song submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        1. Copy the prompt from [docs/SONG_PROMPT.md](../blob/main/docs/SONG_PROMPT.md) into any AI tool and fill in your song.
+        2. Paste the JSON it returns below.
+        We'll validate it, play it through and add it. Once merged it appears on the site automatically.
+  - type: input
+    id: song
+    attributes:
+      label: Song
+      placeholder: Title — composer / artist
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Recording or source you used
+    validations:
+      required: true
+  - type: textarea
+    id: json
+    attributes:
+      label: Song JSON
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: checked
+    attributes:
+      label: What did you check by ear? (optional)

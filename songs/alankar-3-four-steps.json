@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "alankar-3-four-steps",
+  "title": "Alankar 3 — Four steps",
+  "composer": "Traditional",
+  "from": "Hindustani practice",
+  "arrangement": {
+    "by": "FluteSim",
+    "notes": "Groups of four: Sa Re Ga Ma, Re Ga Ma Pa, … then back down."
+  },
+  "instrument": "bansuri",
+  "holes": 6,
+  "tempo": 84,
+  "timeSignature": [
+    4,
+    4
+  ],
+  "sourceKey": "C major",
+  "saInSource": "C4",
+  "recommendedScale": "C",
+  "difficulty": "easy",
+  "totalBeats": 48.0,
+  "sections": [
+    {
+      "name": "Aaroh",
+      "bar": 1
+    },
+    {
+      "name": "Avaroh",
+      "bar": 7
+    }
+  ],
+  "notes": [
+    {"bar":1,"beat":0.0,"dur":1.0,"swar":"Sa","octave":"madhya","western":"C4","blow":"medium","stress":0.85,"articulation":"tongued"},
+    {"bar":1,"beat":1.0,"dur":1.0,"swar":"Re","octave":"madhya","western":"D4","blow":"medium","stress":0.5,"articulation":"tongued"},
+    {"bar":1,"beat":2.0,"dur":1.0,"swar":"Ga","octave":"madhya","western":"E4","blow":"medium","stress":0.65,"articulation":"tongued"},
+    {"bar":1,"beat":3.0,"dur":1.0,"swar":"Ma","octave":"madhya","western":"F4","blow":"medium","stress":0.5,"articulation":"tongued"},
+    {"bar":2,"beat":4.0,"dur":1.0,"swar":"Re","octave":"madhya","western":"D4","blow":"medium","stress":0.85,"articulation":"tongued"},
+    {"bar":2,"beat":5.0,"dur":1.0,"swar":"Ga","octave":"madhya","western":"E4","blow":"medium","stress":0.5,"articulation":"tongued"},
+    {"bar":2,"beat":6.0,"dur":1.0,"swar":"Ma","octave":"madhya","western":"F4","blow":"medium","stress":0.65,"articulation":"tongued"},
+    {"bar":2,"beat":7.0,"dur":1.0,"swar":"Pa","octave":"madhya","western":"G4","blow":"strong","stress":0.5,"articulation":"tongued"},
+    {"bar":3,"beat":8.0,"dur":1.0,"swar":"Ga","octave":"madhya","western":"E4","blow":"medium","stress":0.85,"articulation":"tongued"},
+    {"bar":3,"beat":9.0,"dur":1.0,"swar":"Ma","octave":"madhya","western":"F4","blow":"medium","stress":0.5,"articulation":"tongued"},
+    {"bar":3,"beat":10.0,"dur":1.0,"swar":"Pa","octave":"madhya","western":"G4","blow":"strong","stress":0.65,"articulation":"tongued"},
+    {"bar":3,"beat":11.0,"dur":1.0,"swar":"Dha","octave":"madhya","western":"A4","blow":"strong","stress":0.5,"articulation":"tongued"},
+    {"bar":4,"beat":12.0,"dur":1.0,"swar":"Ma","octave":"madhya","western":"F4","blow":"medium","stress":0.85,"articulation":"tongued"},
+    {"bar":4,"beat":13.0,"dur":1.0,"swar":"Pa","octave":"madhya","western":"G4","blow":"strong","stress":0.5,"articulation":"tongued"},
+    {"bar":4,"beat":14.0,"dur":1.0,"swar":"Dha","octave":"madhya","western":"A4","blow":"strong","stress":0.65,"articulation":"tongued"},
+    {"bar":4,"beat":15.0,"dur":1.0,"swar":"Ni","octave":"madhya","western":"B4","blow":"strong","stress":0.5,"articulation":"tongued"},
+    {"bar":5,"beat":16.0,"dur":1.0,"swar":"Pa","octave":"madhya","western":"G4","blow":"strong","stress":0.85,"articulation":"tongued"},
+    {"bar":5,"beat":17.0,"dur":1.0,"swar":"Dha","octave":"madhya","western":"A4","blow":"strong","stress":0.5,"articulation":"tongued"},
+    {"bar":5,"beat":18.0,"dur":1.0,"swar":"Ni","octave":"madhya","western":"B4","blow":"strong","stress":0.65,"articulation":"tongued"},
+    {"bar":5,"beat":19.0,"dur":1.0,"swar":"Sa","octave":"taar","western":"C5","blow":"strong","stress":0.5,"articulation":"tongued","breathAfter":true},
+    {"bar":6,"beat":20.0,"dur":4.0,"swar":"Sa","octave":"taar","western":"C5","blow":"strong","stress":0.85,"articulation":"tongued"},
+    {"bar":7,"beat":24.0,"dur":1.0,"swar":"Sa","octave":"taar","western":"C5","blow":"strong","stress":0.85,"articulation":"tongued"},
+    {"bar":7,"beat":25.0,"dur":1.0,"swar":"Ni","octave":"madhya","western":"B4","blow":"strong","stress":0.5,"articulation":"tongued"},
+    {"bar":7,"beat":26.0,"dur":1.0,"swar":"Dha","octave":"madhya","western":"A4","blow":"strong","stress":0.65,"articulation":"tongued"},
+    {"bar":7,"beat":27.0,"dur":1.0,"swar":"Pa","octave":"madhya","western":"G4","blow":"strong","stress":0.5,"articulation":"tongued"},
+    {"bar":8,"beat":28.0,"dur":1.0,"swar":"Ni","octave":"madhya","western":"B4","blow":"strong","stress":0.85,"articulation":"tongued"},
+    {"bar":8,"beat":29.0,"dur":1.0,"swar":"Dha","octave":"madhya","western":"A4","blow":"strong","stress":0.5,"articulation":"tongued"},
+    {"bar":8,"beat":30.0,"dur":1.0,"swar":"Pa","octave":"madhya","western":"G4","blow":"strong","stress":0.65,"articulation":"tongued"},
+    {"bar":8,"beat":31.0,"dur":1.0,"swar":"Ma","octave":"madhya","western":"F4","blow":"medium","stress":0.5,"articulation":"tongued"},
+    {"bar":9,"beat":32.0,"dur":1.0,"swar":"Dha","octave":"madhya","western":"A4","blow":"strong","stress":0.85,"articulation":"tongued"},
+    {"bar":9,"beat":33.0,"dur":1.0,"swar":"Pa","octave":"madhya","western":"G4","blow":"strong","stress":0.5,"articulation":"tongued"},
+    {"bar":9,"beat":34.0,"dur":1.0,"swar":"Ma","octave":"madhya","western":"F4","blow":"medium","stress":0.65,"articulation":"tongued"},
+    {"bar":9,"beat":35.0,"dur":1.0,"swar":"Ga","octave":"madhya","western":"E4","blow":"medium","stress":0.5,"articulation":"tongued"},
+    {"bar":10,"beat":36.0,"dur":1.0,"swar":"Pa","octave":"madhya","western":"G4","blow":"strong","stress":0.85,"articulation":"tongued"},
+    {"bar":10,"beat":37.0,"dur":1.0,"swar":"Ma","octave":"madhya","western":"F4","blow":"medium","stress":0.5,"articulation":"tongued"},
+    {"bar":10,"beat":38.0,"dur":1.0,"swar":"Ga","octave":"madhya","western":"E4","blow":"medium","stress":0.65,"articulation":"tongued"},
+    {"bar":10,"beat":39.0,"dur":1.0,"swar":"Re","octave":"madhya","western":"D4","blow":"medium","stress":0.5,"articulation":"tongued"},
+    {"bar":11,"beat":40.0,"dur":1.0,"swar":"Ma","octave":"madhya","western":"F4","blow":"medium","stress":0.85,"articulation":"tongued"},
+    {"bar":11,"beat":41.0,"dur":1.0,"swar":"Ga","octave":"madhya","western":"E4","blow":"medium","stress":0.5,"articulation":"tongued"},
+    {"bar":11,"beat":42.0,"dur":1.0,"swar":"Re","octave":"madhya","western":"D4","blow":"medium","stress":0.65,"articulation":"tongued"},
+    {"bar":11,"beat":43.0,"dur":1.0,"swar":"Sa","octave":"madhya","western":"C4","blow":"medium","stress":0.5,"articulation":"tongued","breathAfter":true},
+    {"bar":12,"beat":44.0,"dur":4.0,"swar":"Sa","octave":"madhya","western":"C4","blow":"medium","stress":0.85,"articulation":"tongued","breathAfter":true}
+  ]
+}

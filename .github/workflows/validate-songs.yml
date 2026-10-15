@@ -1,0 +1,17 @@
+name: Validate songs
+
+on:
+  pull_request:
+    paths:
+      - 'songs/**'
+      - 'scripts/validate-songs.mjs'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/validate-songs.mjs

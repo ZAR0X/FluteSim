@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FluteSim song",
+  "type": "object",
+  "required": ["schemaVersion", "id", "title", "composer", "instrument", "holes", "tempo", "timeSignature", "notes"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Kebab-case, same as the file name." },
+    "title": { "type": "string", "minLength": 1 },
+    "composer": { "type": "string", "minLength": 1 },
+    "from": { "type": "string", "description": "Film, game, album or tradition the song comes from." },
+    "arrangement": {
+      "type": "object",
+      "properties": {
+        "by": { "type": "string" },
+        "reference": { "type": "string", "description": "Link to the recording or tutorial used." },
+        "notes": { "type": "string" }
+      }
+    },
+    "instrument": { "const": "bansuri" },
+    "holes": { "const": 6 },
+    "tempo": { "type": "number", "minimum": 20, "maximum": 300, "description": "Beats per minute at 1x speed." },
+    "timeSignature": { "type": "array", "items": { "type": "integer", "minimum": 1 }, "minItems": 2, "maxItems": 2 },
+    "sourceKey": { "type": "string", "description": "Key of the original transcription, e.g. \"A major\"." },
+    "saInSource": { "type": "string", "description": "Which western pitch in the source was treated as Sa, e.g. \"A4\"." },
+    "recommendedScale": { "enum": ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"] },
+    "difficulty": { "enum": ["easy", "medium", "hard"] },
+    "totalBeats": { "type": "number", "description": "Length of the song in beats." },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "bar"],
+        "properties": { "name": { "type": "string" }, "bar": { "type": "integer", "minimum": 1 } }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["beat", "dur", "swar", "octave"],
+        "properties": {
+          "bar": { "type": "integer", "minimum": 1 },
+          "beat": { "type": "number", "minimum": 0, "description": "Start, in beats from the start of the song. Gaps between notes are rests." },
+          "dur": { "type": "number", "exclusiveMinimum": 0, "description": "Length in beats (1 = quarter note in x/4)." },
+          "swar": { "enum": ["Sa", "Re", "Ga", "Ma", "Pa", "Dha", "Ni"] },
+          "variant": { "enum": ["shuddh", "komal", "tivra"], "default": "shuddh" },
+          "octave": { "enum": ["mandra", "madhya", "taar"] },
+          "western": { "type": "string", "pattern": "^[A-G](#|b)?[0-9]$", "description": "Original pitch in the source key." },
+          "blow": { "enum": ["soft", "medium", "strong"] },
+          "stress": { "type": "number", "minimum": 0, "maximum": 1 },
+          "articulation": { "enum": ["tongued", "slurred"] },
+          "breathAfter": { "type": "boolean" },
+          "octaveShift": { "type": "integer", "description": "Set when a note was moved by octaves to fit the bansuri." }
+        }
+      }
+    }
+  }
+}

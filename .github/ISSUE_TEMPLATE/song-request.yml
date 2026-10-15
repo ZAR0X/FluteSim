@@ -1,0 +1,30 @@
+name: Request a song
+description: Ask for a song to be added to FluteSim.
+title: "Song request: "
+labels: ["song request"]
+body:
+  - type: input
+    id: song
+    attributes:
+      label: Song
+      placeholder: Title — composer / artist
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to a recording
+      placeholder: YouTube, Spotify…
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Sheet music, sargam or notes (optional)
+      description: Anything written down makes the transcription far more accurate.
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Help
+      options:
+        - label: I can check the transcription by ear once it's added
